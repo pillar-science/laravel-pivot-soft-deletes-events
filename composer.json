@@ -3,8 +3,14 @@
     "description": "Merge between fico7489/laravel-pivot and ddzobov/laravel-pivot-softdeletes",
     "require": {
         "ddzobov/laravel-pivot-softdeletes": "^2.1",
-        "fico7489/laravel-pivot": "^3.0"
+        "fico7489/laravel-pivot": "dev-master"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:pillar-science/laravel-pivot.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "PillarScience\\LaravelPivotSoftdeletesEvents\\": "src/"

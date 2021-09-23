@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f45a0b0409ac276b0b8c9edb1cd9cf2d",
+    "content-hash": "050c50155d34889c84270cebf963e569",
     "packages": [
         {
             "name": "brick/math",
@@ -500,16 +500,16 @@
         },
         {
             "name": "fico7489/laravel-pivot",
-            "version": "3.0.7",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fico7489/laravel-pivot.git",
-                "reference": "97fbc8c7c65b652f21b0ff78a430712f3f14a515"
+                "url": "https://github.com/pillar-science/laravel-pivot.git",
+                "reference": "6c1230411035d0daef1325cbbed1c798938f9bc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fico7489/laravel-pivot/zipball/97fbc8c7c65b652f21b0ff78a430712f3f14a515",
-                "reference": "97fbc8c7c65b652f21b0ff78a430712f3f14a515",
+                "url": "https://api.github.com/repos/pillar-science/laravel-pivot/zipball/6c1230411035d0daef1325cbbed1c798938f9bc7",
+                "reference": "6c1230411035d0daef1325cbbed1c798938f9bc7",
                 "shasum": ""
             },
             "require": {
@@ -519,13 +519,18 @@
                 "friendsofphp/php-cs-fixer": "*",
                 "orchestra/testbench": "*"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Fico7489\\Laravel\\Pivot\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Fico7489\\Laravel\\Pivot\\Tests\\": "tests/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -550,7 +555,7 @@
                 "issues": "https://github.com/fico7489/laravel-pivot/issues",
                 "source": "https://github.com/fico7489/laravel-pivot"
             },
-            "time": "2020-10-05T06:12:29+00:00"
+            "time": "2021-07-16T22:02:05+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -7764,7 +7769,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "fico7489/laravel-pivot": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
