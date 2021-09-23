@@ -1,0 +1,27 @@
+{
+    "name": "pillar-science/laravel-pivot-softdeletes-events",
+    "description": "Merge between fico7489/laravel-pivot and ddzobov/laravel-pivot-softdeletes",
+    "require": {
+        "ddzobov/laravel-pivot-softdeletes": "^2.1",
+        "fico7489/laravel-pivot": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PillarScience\\LaravelPivotSoftdeletesEvents\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PillarScience\\LaravelPivotSoftdeletesEvents\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mathieu Tanguay",
+            "email": "mathieu@pillar.science"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^6.21"
+    }
+}

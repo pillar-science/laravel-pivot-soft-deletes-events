@@ -1,0 +1,40 @@
+version: "3.7"
+services:
+  phpunit:
+    # cx app php artisan migrate:fresh
+    # cx app php artisan db:seed --class TestingSeeder (Snapshot must be based on TestingSeeder content)
+    # cx app php artisan search:regenerate (When ElasticSearch error occurs)
+    # cr phpunit
+    build:
+      context: .
+      dockerfile: phpunit.Dockerfile
+      args:
+        XDEBUG_ENABLED: 0
+        XDEBUG_REMOTE_HOST: 192.168.1.120
+        XDEBUG_MODE: debug
+    environment:
+      - PHP_IDE_CONFIG=serverName=softdeletes-events
+      - DB_HOST=database
+      - DB_PORT=3306
+      - DB_DATABASE=testbench
+      - DB_USERNAME=root
+      - DB_PASSWORD=secret
+    volumes:
+      - .:/var/www/html:rw
+    depends_on:
+      - database
+    user: host
+    init: true
+    entrypoint: vendor/bin/phpunit
+    command: --stop-on-error --stop-on-failure
+  database:
+    image: mariadb:10.3
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_DATABASE=testbench
+    volumes:
+      - mariadb_data:/var/lib/mysql
+volumes:
+  mariadb_data:
