@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "050c50155d34889c84270cebf963e569",
+    "content-hash": "efcce0406d765caa3bb06ce47f9809f8",
     "packages": [
         {
             "name": "brick/math",
@@ -500,7 +500,7 @@
         },
         {
             "name": "fico7489/laravel-pivot",
-            "version": "dev-master",
+            "version": "3.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pillar-science/laravel-pivot.git",
@@ -519,7 +519,6 @@
                 "friendsofphp/php-cs-fixer": "*",
                 "orchestra/testbench": "*"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -7769,9 +7768,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "fico7489/laravel-pivot": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

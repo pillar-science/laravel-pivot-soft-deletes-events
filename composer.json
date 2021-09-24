@@ -3,7 +3,7 @@
     "description": "Merge between fico7489/laravel-pivot and ddzobov/laravel-pivot-softdeletes",
     "require": {
         "ddzobov/laravel-pivot-softdeletes": "^2.1",
-        "fico7489/laravel-pivot": "dev-master"
+        "fico7489/laravel-pivot": "3.0.8"
     },
     "repositories": [
         {
